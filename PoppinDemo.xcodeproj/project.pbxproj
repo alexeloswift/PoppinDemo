@@ -11,6 +11,8 @@
 		FDA627F428E77E9A00DD09B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA627F328E77E9A00DD09B3 /* ContentView.swift */; };
 		FDA627F628E77E9B00DD09B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA627F528E77E9B00DD09B3 /* Assets.xcassets */; };
 		FDA627FA28E77E9B00DD09B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA627F928E77E9B00DD09B3 /* Preview Assets.xcassets */; };
+		FDA6280128E77FF700DD09B3 /* PartyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6280028E77FF700DD09B3 /* PartyModel.swift */; };
+		FDA6280328E7846900DD09B3 /* PartyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6280228E7846900DD09B3 /* PartyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		FDA627F528E77E9B00DD09B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDA627F728E77E9B00DD09B3 /* PoppinDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PoppinDemo.entitlements; sourceTree = "<group>"; };
 		FDA627F928E77E9B00DD09B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDA6280028E77FF700DD09B3 /* PartyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyModel.swift; sourceTree = "<group>"; };
+		FDA6280228E7846900DD09B3 /* PartyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				FDA627F128E77E9A00DD09B3 /* PoppinDemoApp.swift */,
 				FDA627F328E77E9A00DD09B3 /* ContentView.swift */,
+				FDA6280028E77FF700DD09B3 /* PartyModel.swift */,
+				FDA6280228E7846900DD09B3 /* PartyViewModel.swift */,
 				FDA627F528E77E9B00DD09B3 /* Assets.xcassets */,
 				FDA627F728E77E9B00DD09B3 /* PoppinDemo.entitlements */,
 				FDA627F828E77E9B00DD09B3 /* Preview Content */,
@@ -141,6 +147,8 @@
 			files = (
 				FDA627F428E77E9A00DD09B3 /* ContentView.swift in Sources */,
 				FDA627F228E77E9A00DD09B3 /* PoppinDemoApp.swift in Sources */,
+				FDA6280128E77FF700DD09B3 /* PartyModel.swift in Sources */,
+				FDA6280328E7846900DD09B3 /* PartyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
