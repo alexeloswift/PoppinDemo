@@ -12,7 +12,7 @@ struct ContentView: View {
     @StateObject private var viewmodel = PartyViewModel()
     @State var listArray = ["This Week", "Popular", "Nearby"]
     
-//    BODY QUICK VIEW
+// BODY QUICK VIEW
     
     var body: some View {
         NavigationStack {
@@ -24,7 +24,7 @@ struct ContentView: View {
         }
     }
     
-//    BODY COMPONENTS
+// BODY COMPONENTS
     
     private var pickerView: some View {
         Picker("", selection: $listArray) {
@@ -58,8 +58,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-
-
+// DETAILED VIEW
 
 struct DetailedView: View {
     var party: Party
@@ -72,7 +71,7 @@ struct DetailedView: View {
     }
 }
 
-
+// VIEW MOD FOR PARTIES
 
 struct PartyBoxViewMod: ViewModifier {
     func body(content: Content) -> some View {
