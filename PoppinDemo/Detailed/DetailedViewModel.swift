@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SDWebImageSwiftUI
 
 class DetailedViewModel: ObservableObject {
     @Published var lat: Double = 0.0

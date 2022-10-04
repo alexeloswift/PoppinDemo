@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 class PartyViewModel: ObservableObject {
     
     @Published var partyArrayFull: [Party] = []
