@@ -13,6 +13,10 @@
 		FDA627FA28E77E9B00DD09B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA627F928E77E9B00DD09B3 /* Preview Assets.xcassets */; };
 		FDA6280128E77FF700DD09B3 /* PartyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6280028E77FF700DD09B3 /* PartyModel.swift */; };
 		FDA6280328E7846900DD09B3 /* PartyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6280228E7846900DD09B3 /* PartyViewModel.swift */; };
+		FDA6280528EB3CE200DD09B3 /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6280428EB3CE200DD09B3 /* DetailedView.swift */; };
+		FDA6280728EB3CF900DD09B3 /* DetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6280628EB3CF900DD09B3 /* DetailedViewModel.swift */; };
+		FDA6280928EB53D700DD09B3 /* Key.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDA6280828EB53D700DD09B3 /* Key.plist */; };
+		FDA6280D28EBFB7400DD09B3 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6280C28EBFB7400DD09B3 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		FDA627F928E77E9B00DD09B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FDA6280028E77FF700DD09B3 /* PartyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyModel.swift; sourceTree = "<group>"; };
 		FDA6280228E7846900DD09B3 /* PartyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyViewModel.swift; sourceTree = "<group>"; };
+		FDA6280428EB3CE200DD09B3 /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
+		FDA6280628EB3CF900DD09B3 /* DetailedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewModel.swift; sourceTree = "<group>"; };
+		FDA6280828EB53D700DD09B3 /* Key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Key.plist; sourceTree = "<group>"; };
+		FDA6280C28EBFB7400DD09B3 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +66,13 @@
 			children = (
 				FDA627F128E77E9A00DD09B3 /* PoppinDemoApp.swift */,
 				FDA627F328E77E9A00DD09B3 /* ContentView.swift */,
-				FDA6280028E77FF700DD09B3 /* PartyModel.swift */,
 				FDA6280228E7846900DD09B3 /* PartyViewModel.swift */,
+				FDA6280028E77FF700DD09B3 /* PartyModel.swift */,
+				FDA6280428EB3CE200DD09B3 /* DetailedView.swift */,
+				FDA6280628EB3CF900DD09B3 /* DetailedViewModel.swift */,
+				FDA6280C28EBFB7400DD09B3 /* WeatherModel.swift */,
 				FDA627F528E77E9B00DD09B3 /* Assets.xcassets */,
+				FDA6280828EB53D700DD09B3 /* Key.plist */,
 				FDA627F728E77E9B00DD09B3 /* PoppinDemo.entitlements */,
 				FDA627F828E77E9B00DD09B3 /* Preview Content */,
 			);
@@ -135,6 +147,7 @@
 			files = (
 				FDA627FA28E77E9B00DD09B3 /* Preview Assets.xcassets in Resources */,
 				FDA627F628E77E9B00DD09B3 /* Assets.xcassets in Resources */,
+				FDA6280928EB53D700DD09B3 /* Key.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,9 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA6280728EB3CF900DD09B3 /* DetailedViewModel.swift in Sources */,
 				FDA627F428E77E9A00DD09B3 /* ContentView.swift in Sources */,
 				FDA627F228E77E9A00DD09B3 /* PoppinDemoApp.swift in Sources */,
+				FDA6280528EB3CE200DD09B3 /* DetailedView.swift in Sources */,
 				FDA6280128E77FF700DD09B3 /* PartyModel.swift in Sources */,
+				FDA6280D28EBFB7400DD09B3 /* WeatherModel.swift in Sources */,
 				FDA6280328E7846900DD09B3 /* PartyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

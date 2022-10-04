@@ -12,7 +12,7 @@ struct ContentView: View {
     @StateObject private var viewmodel = PartyViewModel()
     @State var listArray = ["This Week", "Popular", "Nearby"]
     
-// BODY QUICK VIEW
+    // BODY QUICK VIEW
     
     var body: some View {
         NavigationStack {
@@ -21,10 +21,11 @@ struct ContentView: View {
                 partyRow
             }
             .navigationTitle("Parties")
+            
         }
     }
     
-// BODY COMPONENTS
+    // BODY COMPONENTS
     
     private var pickerView: some View {
         Picker("", selection: $listArray) {
@@ -36,18 +37,24 @@ struct ContentView: View {
     }
     
     private var partyRow: some View {
+        GeometryReader { geo in
+
         ScrollView {
-            VStack {
-                ForEach(viewmodel.partyArrayFull) { party in
-                    NavigationLink(destination: DetailedView(party: party)) {
-                        Text(party.partyName)
-                            .modifier(PartyBoxViewMod())
-                            .padding(.top, 10)
+                VStack {
+                    ForEach(viewmodel.partyArrayFull) { party in
+                        NavigationLink(destination: DetailedView(viewmodel: DetailedViewModel(party: party))) {
+                            Text(party.partyName)
+                                .modifier(PartyBoxViewMod())
+                                .padding(.top, 8)
+                            
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
-                    .buttonStyle(PlainButtonStyle())
                 }
-            }
-        }
+                .padding()
+                .frame(width: geo.size.width, alignment: .center)
+                
+            }}
         .scrollIndicators(.hidden)
     }
 }
@@ -58,19 +65,6 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-// DETAILED VIEW
-
-struct DetailedView: View {
-    var party: Party
-    
-    var body: some View {
-        NavigationStack {
-            Text("")
-                .navigationTitle(party.partyName)
-        }
-    }
-}
-
 // VIEW MOD FOR PARTIES
 
 struct PartyBoxViewMod: ViewModifier {
@@ -78,7 +72,7 @@ struct PartyBoxViewMod: ViewModifier {
         content
             .font(.title2.bold())
             .padding()
-            .frame(width: 340, height: 118, alignment: .topLeading)
+            .frame(width: 360, height: 160, alignment: .topLeading)
             .overlay(
                 RoundedRectangle(cornerRadius: 9)
                     .stroke(Color.purple, lineWidth: 2.5))
