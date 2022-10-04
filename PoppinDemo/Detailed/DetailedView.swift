@@ -33,7 +33,6 @@ struct DetailedView: View {
             }
         }
         .preferredColorScheme(.dark)
-        
     }
     
     //    MARK: - BODY COMPOSITION

@@ -11,11 +11,12 @@ struct PartyView: View {
     @StateObject private var viewmodel = PartyViewModel()
     @State var listArray = ["This Week", "Popular", "Nearby"]
     
-//    MARK: - BODY QUICK VIEW
+    //    MARK: - BODY QUICK VIEW
     
     var body: some View {
-        GeometryReader { geo in
-            NavigationStack {
+        
+        NavigationStack {
+            GeometryReader { geo in
                 VStack {
                     pickerView
                     partyRow
@@ -27,7 +28,7 @@ struct PartyView: View {
         .preferredColorScheme(.dark)
     }
     
-//    MARK: - BODY COMPOSITION
+    //    MARK: - BODY COMPOSITION
     
     private var pickerView: some View {
         Picker("", selection: $listArray) {
