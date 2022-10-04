@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - Welcome
+// MARK: - Root
 struct Root: Codable {
     let lat, lon: Double
     let timezone: String

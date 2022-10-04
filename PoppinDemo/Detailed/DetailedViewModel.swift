@@ -32,7 +32,7 @@ class DetailedViewModel: ObservableObject {
     init(party: Party) {
         self.party = party
     }
-//
+
     @MainActor
     func fetchData() async {
         let urlString = "https://api.openweathermap.org/data/3.0/onecall?lat=\(party.latitude)&lon=\(party.longitude)&units=imperial&exclude=minutely,hourly,alerts,daily&appid=\(PlistParser.getStringValue(forkey: "WeatherAPIKey"))"
@@ -79,7 +79,6 @@ class DetailedViewModel: ObservableObject {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EE d"
         currentDate = dateFormatter.string(from: date)
-        print(currentDate)
     }
     
     func getSunrise(dt: Int) {
@@ -87,7 +86,6 @@ class DetailedViewModel: ObservableObject {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm"
         currentSunrise = dateFormatter.string(from: date)
-        print(currentSunrise)
     }
     
     func getSunset(dt: Int) {
@@ -95,7 +93,6 @@ class DetailedViewModel: ObservableObject {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm"
         currentSunset = dateFormatter.string(from: date)
-        print(currentSunset)
     }
     
 //    MARK: - CONVERTING STRING TO URL FOR IMAGE ICON

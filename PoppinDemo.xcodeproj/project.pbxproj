@@ -69,9 +69,9 @@
 			children = (
 				FDA6281928ECE17100DD09B3 /* Info.plist */,
 				FDA627F128E77E9A00DD09B3 /* PoppinDemoApp.swift */,
-				FDA6281728ECDFD000DD09B3 /* PlistParser.swift */,
 				FDA6281328ECDC5800DD09B3 /* Party */,
 				FDA6281428ECDC7300DD09B3 /* Detailed */,
+				FDA6281728ECDFD000DD09B3 /* PlistParser.swift */,
 				FDA627F528E77E9B00DD09B3 /* Assets.xcassets */,
 				FDA627F728E77E9B00DD09B3 /* PoppinDemo.entitlements */,
 				FDA627F828E77E9B00DD09B3 /* Preview Content */,

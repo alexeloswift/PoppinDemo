@@ -15,66 +15,66 @@ struct DetailedView: View {
     //    MARK: - BODY QUICK VIEW
     
     var body: some View {
-            allBodyComponents
+        NavigationStack {
+            GeometryReader { geo in
+                ScrollView {
+                    Spacer()
+                    allBodyComponents
+                        .frame(width: geo.size.width)
+                }
+            }
+            .scrollIndicators(.hidden)
+            .navigationTitle(viewmodel.party.partyName)
+            .task {
+                await viewmodel.fetchData()
+                viewmodel.getDate(dt: viewmodel.dt)
+                viewmodel.getSunrise(dt: viewmodel.sunrise)
+                viewmodel.getSunset(dt: viewmodel.sunset)
+            }
+        }
+        .preferredColorScheme(.dark)
+        
     }
     
     //    MARK: - BODY COMPOSITION
     
     private var allBodyComponents: some View {
-        NavigationStack {
-            GeometryReader { geo in
-                ScrollView {
-                    Spacer()
-                    VStack(spacing: 18) {
-                        header
-                        HStack(spacing: 20) {
-                            date
-                            timezone
-                        }
-                        HStack(spacing:  20) {
-                            latitude
-                            longitude
-                        }
-                        HStack(spacing: 20) {
-                            temp
-                            feelsLike
-                        }
-                        HStack(spacing: 20) {
-                            sunrise
-                            sunset
-                        }
-                        HStack(spacing: 20) {
-                            humidity
-                            pressure
-                        }
-                        HStack(spacing: 20) {
-                            dewPoint
-                            uvi
-                        }
-                        HStack(spacing: 20) {
-                            cloudiness
-                            visibilty
-                        }
-                        HStack(spacing: 20) {
-                            windSpeed
-                            windDirection
-                        }
-                    }
-                    .frame(width: geo.size.width, alignment: .center)
-                }
-                .scrollIndicators(.hidden)
-                .navigationTitle(viewmodel.party.partyName)
-                .task {
-                    await viewmodel.fetchData()
-                    viewmodel.getDate(dt: viewmodel.dt)
-                    viewmodel.getSunrise(dt: viewmodel.sunrise)
-                    viewmodel.getSunset(dt: viewmodel.sunset)
-                }
+        VStack(spacing: 18) {
+            header
+            HStack(spacing: 20) {
+                date
+                timezone
+            }
+            HStack(spacing:  20) {
+                latitude
+                longitude
+            }
+            HStack(spacing: 20) {
+                temp
+                feelsLike
+            }
+            HStack(spacing: 20) {
+                sunrise
+                sunset
+            }
+            HStack(spacing: 20) {
+                humidity
+                pressure
+            }
+            HStack(spacing: 20) {
+                dewPoint
+                uvi
+            }
+            HStack(spacing: 20) {
+                cloudiness
+                visibilty
+            }
+            HStack(spacing: 20) {
+                windSpeed
+                windDirection
             }
         }
-        .preferredColorScheme(.dark)
     }
-
     
     //    MARK: - BODY COMPONENTS COMPOSITION
     
