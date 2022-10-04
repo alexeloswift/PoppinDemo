@@ -11,7 +11,7 @@ import SwiftUI
 struct PoppinDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PartyView()
         }
     }
 }

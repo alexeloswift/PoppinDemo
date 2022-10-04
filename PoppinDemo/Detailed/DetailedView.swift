@@ -60,6 +60,7 @@ struct DetailedView: View {
                             windDirection
                         }
                     }
+                    .frame(width: geo.size.width, alignment: .center)
                 }
                 .scrollIndicators(.hidden)
                 .navigationTitle(viewmodel.party.partyName)
@@ -69,7 +70,6 @@ struct DetailedView: View {
                     viewmodel.getSunrise(dt: viewmodel.sunrise)
                     viewmodel.getSunset(dt: viewmodel.sunset)
                 }
-                .frame(width: geo.size.width, alignment: .center)
             }
         }
         .preferredColorScheme(.dark)

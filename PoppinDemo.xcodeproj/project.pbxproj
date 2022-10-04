@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		FDA627F228E77E9A00DD09B3 /* PoppinDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA627F128E77E9A00DD09B3 /* PoppinDemoApp.swift */; };
-		FDA627F428E77E9A00DD09B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA627F328E77E9A00DD09B3 /* ContentView.swift */; };
 		FDA627F628E77E9B00DD09B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA627F528E77E9B00DD09B3 /* Assets.xcassets */; };
 		FDA627FA28E77E9B00DD09B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA627F928E77E9B00DD09B3 /* Preview Assets.xcassets */; };
 		FDA6280128E77FF700DD09B3 /* PartyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6280028E77FF700DD09B3 /* PartyModel.swift */; };
 		FDA6280328E7846900DD09B3 /* PartyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6280228E7846900DD09B3 /* PartyViewModel.swift */; };
 		FDA6280528EB3CE200DD09B3 /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6280428EB3CE200DD09B3 /* DetailedView.swift */; };
 		FDA6280728EB3CF900DD09B3 /* DetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6280628EB3CF900DD09B3 /* DetailedViewModel.swift */; };
-		FDA6280928EB53D700DD09B3 /* Key.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDA6280828EB53D700DD09B3 /* Key.plist */; };
-		FDA6280D28EBFB7400DD09B3 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6280C28EBFB7400DD09B3 /* WeatherModel.swift */; };
+		FDA6281028ECC06500DD09B3 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FDA6280F28ECC06500DD09B3 /* SDWebImageSwiftUI */; };
+		FDA6281228ECDBD900DD09B3 /* PartyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6281128ECDBD900DD09B3 /* PartyView.swift */; };
+		FDA6281628ECDCAF00DD09B3 /* DetailedWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6281528ECDCAF00DD09B3 /* DetailedWeatherModel.swift */; };
+		FDA6281828ECDFD000DD09B3 /* PlistParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6281728ECDFD000DD09B3 /* PlistParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FDA627EE28E77E9A00DD09B3 /* PoppinDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoppinDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA627F128E77E9A00DD09B3 /* PoppinDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoppinDemoApp.swift; sourceTree = "<group>"; };
-		FDA627F328E77E9A00DD09B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FDA627F528E77E9B00DD09B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDA627F728E77E9B00DD09B3 /* PoppinDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PoppinDemo.entitlements; sourceTree = "<group>"; };
 		FDA627F928E77E9B00DD09B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -30,8 +30,10 @@
 		FDA6280228E7846900DD09B3 /* PartyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyViewModel.swift; sourceTree = "<group>"; };
 		FDA6280428EB3CE200DD09B3 /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
 		FDA6280628EB3CF900DD09B3 /* DetailedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewModel.swift; sourceTree = "<group>"; };
-		FDA6280828EB53D700DD09B3 /* Key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Key.plist; sourceTree = "<group>"; };
-		FDA6280C28EBFB7400DD09B3 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		FDA6281128ECDBD900DD09B3 /* PartyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyView.swift; sourceTree = "<group>"; };
+		FDA6281528ECDCAF00DD09B3 /* DetailedWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedWeatherModel.swift; sourceTree = "<group>"; };
+		FDA6281728ECDFD000DD09B3 /* PlistParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistParser.swift; sourceTree = "<group>"; };
+		FDA6281928ECE17100DD09B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA6281028ECC06500DD09B3 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,15 +67,12 @@
 		FDA627F028E77E9A00DD09B3 /* PoppinDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FDA6281928ECE17100DD09B3 /* Info.plist */,
 				FDA627F128E77E9A00DD09B3 /* PoppinDemoApp.swift */,
-				FDA627F328E77E9A00DD09B3 /* ContentView.swift */,
-				FDA6280228E7846900DD09B3 /* PartyViewModel.swift */,
-				FDA6280028E77FF700DD09B3 /* PartyModel.swift */,
-				FDA6280428EB3CE200DD09B3 /* DetailedView.swift */,
-				FDA6280628EB3CF900DD09B3 /* DetailedViewModel.swift */,
-				FDA6280C28EBFB7400DD09B3 /* WeatherModel.swift */,
+				FDA6281728ECDFD000DD09B3 /* PlistParser.swift */,
+				FDA6281328ECDC5800DD09B3 /* Party */,
+				FDA6281428ECDC7300DD09B3 /* Detailed */,
 				FDA627F528E77E9B00DD09B3 /* Assets.xcassets */,
-				FDA6280828EB53D700DD09B3 /* Key.plist */,
 				FDA627F728E77E9B00DD09B3 /* PoppinDemo.entitlements */,
 				FDA627F828E77E9B00DD09B3 /* Preview Content */,
 			);
@@ -85,6 +85,26 @@
 				FDA627F928E77E9B00DD09B3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDA6281328ECDC5800DD09B3 /* Party */ = {
+			isa = PBXGroup;
+			children = (
+				FDA6281128ECDBD900DD09B3 /* PartyView.swift */,
+				FDA6280228E7846900DD09B3 /* PartyViewModel.swift */,
+				FDA6280028E77FF700DD09B3 /* PartyModel.swift */,
+			);
+			path = Party;
+			sourceTree = "<group>";
+		};
+		FDA6281428ECDC7300DD09B3 /* Detailed */ = {
+			isa = PBXGroup;
+			children = (
+				FDA6280428EB3CE200DD09B3 /* DetailedView.swift */,
+				FDA6280628EB3CF900DD09B3 /* DetailedViewModel.swift */,
+				FDA6281528ECDCAF00DD09B3 /* DetailedWeatherModel.swift */,
+			);
+			path = Detailed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +123,9 @@
 			dependencies = (
 			);
 			name = PoppinDemo;
+			packageProductDependencies = (
+				FDA6280F28ECC06500DD09B3 /* SDWebImageSwiftUI */,
+			);
 			productName = PoppinDemo;
 			productReference = FDA627EE28E77E9A00DD09B3 /* PoppinDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -131,6 +154,9 @@
 				Base,
 			);
 			mainGroup = FDA627E528E77E9A00DD09B3;
+			packageReferences = (
+				FDA6280E28ECC06500DD09B3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = FDA627EF28E77E9A00DD09B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -147,7 +173,6 @@
 			files = (
 				FDA627FA28E77E9B00DD09B3 /* Preview Assets.xcassets in Resources */,
 				FDA627F628E77E9B00DD09B3 /* Assets.xcassets in Resources */,
-				FDA6280928EB53D700DD09B3 /* Key.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,11 +184,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDA6280728EB3CF900DD09B3 /* DetailedViewModel.swift in Sources */,
-				FDA627F428E77E9A00DD09B3 /* ContentView.swift in Sources */,
 				FDA627F228E77E9A00DD09B3 /* PoppinDemoApp.swift in Sources */,
+				FDA6281628ECDCAF00DD09B3 /* DetailedWeatherModel.swift in Sources */,
 				FDA6280528EB3CE200DD09B3 /* DetailedView.swift in Sources */,
 				FDA6280128E77FF700DD09B3 /* PartyModel.swift in Sources */,
-				FDA6280D28EBFB7400DD09B3 /* WeatherModel.swift in Sources */,
+				FDA6281828ECDFD000DD09B3 /* PlistParser.swift in Sources */,
+				FDA6281228ECDBD900DD09B3 /* PartyView.swift in Sources */,
 				FDA6280328E7846900DD09B3 /* PartyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +319,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PoppinDemo/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -311,7 +338,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = alexisdiaz.PoppinDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,6 +360,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PoppinDemo/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -349,7 +379,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = alexisdiaz.PoppinDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,6 +410,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDA6280E28ECC06500DD09B3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDA6280F28ECC06500DD09B3 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDA6280E28ECC06500DD09B3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FDA627E628E77E9A00DD09B3 /* Project object */;
 }

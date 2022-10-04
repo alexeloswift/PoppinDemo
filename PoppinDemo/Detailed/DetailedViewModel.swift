@@ -32,10 +32,10 @@ class DetailedViewModel: ObservableObject {
     init(party: Party) {
         self.party = party
     }
-    
+//
     @MainActor
     func fetchData() async {
-        let urlString = "https://api.openweathermap.org/data/3.0/onecall?lat=\(party.latitude)&lon=\(party.longitude)&units=imperial&exclude=minutely,hourly,alerts,daily&appid=f72e048e94c86131acc0052c84b2fb9f"
+        let urlString = "https://api.openweathermap.org/data/3.0/onecall?lat=\(party.latitude)&lon=\(party.longitude)&units=imperial&exclude=minutely,hourly,alerts,daily&appid=\(PlistParser.getStringValue(forkey: "WeatherAPIKey"))"
         if let url = URL(string: urlString) {
             do {
                 let (data, _) = try await URLSession.shared.data(from: url)
