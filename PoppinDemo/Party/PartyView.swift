@@ -14,7 +14,6 @@ struct PartyView: View {
     //    MARK: - BODY QUICK VIEW
     
     var body: some View {
-        
         NavigationStack {
             GeometryReader { geo in
                 VStack {
